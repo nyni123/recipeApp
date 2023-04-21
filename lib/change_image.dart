@@ -15,8 +15,6 @@ class _ChangeImageState extends State<ChangeImage> {
   final List<String> image = [
     'assets/images/coffee.jpg',
     'assets/images/image.png',
-    'assets/images/images1.png',
-    'assets/images/images2.png'
   ];
 
   int currentindex = 0;
