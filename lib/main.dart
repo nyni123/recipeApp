@@ -9,8 +9,9 @@ void main() {
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Welcome to Recepie app'),
-          backgroundColor: Colors.transparent,
+          backgroundColor: Colors.blueAccent[400],
         ),
+        backgroundColor: Color.fromARGB(255, 230, 235, 238),
         body: const SearchBar(),
         drawer: const Drawer(
           width: 280,
