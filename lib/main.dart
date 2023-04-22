@@ -3,8 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:RecipeApp/gradient_container.dart';
 
 void main() {
-  runApp(
-    MaterialApp(
+  runApp((const MainView()));
+}
+
+class MainView extends StatelessWidget {
+  const MainView({super.key});
+  @override
+  Widget build(context) {
+    return MaterialApp(
       home: SafeArea(
         child: Scaffold(
           appBar: AppBar(
@@ -22,6 +28,6 @@ void main() {
           ),
         ),
       ),
-    ),
-  );
+    );
+  }
 }

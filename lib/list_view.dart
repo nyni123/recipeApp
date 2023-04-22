@@ -1,3 +1,4 @@
+import 'package:RecipeApp/food_items.dart';
 import 'package:flutter/material.dart';
 
 class ListViewContanier extends StatelessWidget {
@@ -14,11 +15,9 @@ class ListViewContanier extends StatelessWidget {
           children: [
             ListTile(
               contentPadding: EdgeInsets.zero,
-              leading: Image.asset(
-                'assets/images/home.png',
-                fit: BoxFit.contain,
-                width: 20,
-                height: 20,
+              leading: const Icon(
+                Icons.home,
+                color: Colors.black,
               ),
               title: Text(
                 text1,
@@ -29,12 +28,8 @@ class ListViewContanier extends StatelessWidget {
             // const SizedBox(height: 5),
             ListTile(
               contentPadding: EdgeInsets.zero,
-              leading: Image.asset(
-                'assets/images/image1.png',
-                fit: BoxFit.contain,
-                width: 20,
-                height: 20,
-              ),
+              leading: const Icon(Icons.food_bank),
+              iconColor: Colors.black,
               title: Text(
                 text2,
                 textAlign: TextAlign.left,
@@ -43,6 +38,10 @@ class ListViewContanier extends StatelessWidget {
                   color: Colors.black,
                 ),
               ),
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => const FoodItems()));
+              },
             ),
           ],
         ),
