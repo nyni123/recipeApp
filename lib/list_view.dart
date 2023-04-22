@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 
 class ListViewContanier extends StatelessWidget {
-  const ListViewContanier(this.text1, this.text2, this.text3, {super.key});
+  const ListViewContanier(this.text1, this.text2, {super.key});
 
   final String text1;
   final String text2;
-  final String text3;
   @override
   Widget build(context) {
     return Column(
@@ -16,7 +15,8 @@ class ListViewContanier extends StatelessWidget {
             ListTile(
               contentPadding: EdgeInsets.zero,
               leading: Image.asset(
-                'assets/images/coffee.jpg',
+                'assets/images/home.png',
+                fit: BoxFit.contain,
                 width: 20,
                 height: 20,
               ),
@@ -30,7 +30,8 @@ class ListViewContanier extends StatelessWidget {
             ListTile(
               contentPadding: EdgeInsets.zero,
               leading: Image.asset(
-                'assets/images/image.png',
+                'assets/images/image1.png',
+                fit: BoxFit.contain,
                 width: 20,
                 height: 20,
               ),
@@ -44,18 +45,6 @@ class ListViewContanier extends StatelessWidget {
               ),
             ),
           ],
-        ),
-        const SizedBox(height: 525),
-        Text(text3,
-            textAlign: TextAlign.left,
-            style: const TextStyle(
-              fontSize: 23,
-              color: Colors.black,
-            )),
-        Image.asset(
-          'assets/images/images2.png',
-          width: 40,
-          height: 40,
         ),
       ],
     );
