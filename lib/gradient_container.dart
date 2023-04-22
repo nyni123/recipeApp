@@ -18,8 +18,7 @@ class GradientContainer extends StatelessWidget {
         padding: const EdgeInsets.all(25.0),
         child: const ListViewContanier(
           'Home',
-          'Recipe List ',
-          'Login/signup',
+          'Food Items ',
         ));
   }
 }

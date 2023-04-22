@@ -8,15 +8,13 @@ class SearchBar extends StatelessWidget {
       margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       child: TextField(
         decoration: InputDecoration(
-          prefixIcon: const Icon(Icons.search),
-          hintText: 'Search...',
-          border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(25.0),
-            borderSide: const BorderSide(),
-          ),
-          contentPadding:
-              const EdgeInsets.symmetric(horizontal: 16, vertical: 0),
-        ),
+            prefixIcon: const Icon(Icons.search),
+            hintText: 'Search...',
+            border: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(25.0),
+              borderSide: const BorderSide(),
+            ),
+            contentPadding: EdgeInsets.zero),
       ),
     );
   }

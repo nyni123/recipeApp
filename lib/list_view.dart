@@ -1,11 +1,11 @@
+import 'package:RecipeApp/food_items.dart';
 import 'package:flutter/material.dart';
 
 class ListViewContanier extends StatelessWidget {
-  const ListViewContanier(this.text1, this.text2, this.text3, {super.key});
+  const ListViewContanier(this.text1, this.text2, {super.key});
 
   final String text1;
   final String text2;
-  final String text3;
   @override
   Widget build(context) {
     return Column(
@@ -15,10 +15,9 @@ class ListViewContanier extends StatelessWidget {
           children: [
             ListTile(
               contentPadding: EdgeInsets.zero,
-              leading: Image.asset(
-                'assets/images/coffee.jpg',
-                width: 20,
-                height: 20,
+              leading: const Icon(
+                Icons.home,
+                color: Colors.black,
               ),
               title: Text(
                 text1,
@@ -29,11 +28,8 @@ class ListViewContanier extends StatelessWidget {
             // const SizedBox(height: 5),
             ListTile(
               contentPadding: EdgeInsets.zero,
-              leading: Image.asset(
-                'assets/images/image.png',
-                width: 20,
-                height: 20,
-              ),
+              leading: const Icon(Icons.food_bank),
+              iconColor: Colors.black,
               title: Text(
                 text2,
                 textAlign: TextAlign.left,
@@ -42,20 +38,12 @@ class ListViewContanier extends StatelessWidget {
                   color: Colors.black,
                 ),
               ),
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => const FoodItems()));
+              },
             ),
           ],
-        ),
-        const SizedBox(height: 525),
-        Text(text3,
-            textAlign: TextAlign.left,
-            style: const TextStyle(
-              fontSize: 23,
-              color: Colors.black,
-            )),
-        Image.asset(
-          'assets/images/images2.png',
-          width: 40,
-          height: 40,
         ),
       ],
     );
