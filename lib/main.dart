@@ -14,17 +14,18 @@ class MainView extends StatelessWidget {
       home: SafeArea(
         child: Scaffold(
           appBar: AppBar(
-            title: const Text('Welcome to Recepie app'),
+            title: const Text(
+              '              Kitchen Mates',
+              textAlign: TextAlign.center,
+            ),
             backgroundColor: Colors.transparent,
           ),
           backgroundColor: Colors.deepPurple[100],
           body: const Display(),
           drawer: const Drawer(
             width: 280,
-            child: GradientContainer(
-              Colors.greenAccent,
-              Colors.blueGrey,
-            ),
+            child: GradientContainer(Color.fromARGB(255, 237, 240, 241),
+                Color.fromARGB(255, 237, 242, 243)),
           ),
         ),
       ),
