@@ -58,10 +58,6 @@ class ListViewContanier extends StatelessWidget {
           },
           child: Column(
             children: const [
-              Icon(
-                Icons.login,
-                color: Colors.white,
-              ),
               Text(
                 'Login /Signup',
                 style: TextStyle(fontSize: 23, color: Colors.white),
