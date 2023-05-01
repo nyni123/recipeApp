@@ -18,12 +18,13 @@ class MainView extends StatelessWidget {
     return MaterialApp(
       home: SafeArea(
         child: Scaffold(
+          resizeToAvoidBottomInset: false,
           appBar: AppBar(
             title: const Text(
-              '              Kitchen Mates',
-              textAlign: TextAlign.center,
+              'Kitchen Mates',
             ),
-            backgroundColor: Colors.transparent,
+            centerTitle: true,
+            backgroundColor: Colors.green,
           ),
           backgroundColor: Colors.deepPurple[100],
           body: const Display(),
